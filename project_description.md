@@ -26,7 +26,7 @@ My initial idea was to route the outputs from Wekinator, via OSC directly to my 
 
 Finally, I managed to get all my Wekinator outputs to Max, and from Max to my Arduino board. However, because of the way my lighting function for the NeoPixel strip worked, I wasn't able to figure out how to utilize the data, apart from the finger combinations in the way that I initially wanted. So for the purpose of getting this to work, I used just a few finger combinations. The original setup trained 11 finger combinations, but in the demo videos below you see three of these implemented.
 
-![original finger comb charts](git.adress)
+![original finger comb charts](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/IMG_5942.JPG)
 ![finger-combo-1](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/IMG_5937.JPG)
 ![finger-combo-2](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/IMG_5938.JPG)
 ![finger-combo-3](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/IMG_5939.JPG)
@@ -36,7 +36,9 @@ Finally, I managed to get all my Wekinator outputs to Max, and from Max to my Ar
 In Arduino, I used functions I had developed for the NeoPixel before. It's basically a strobe function with adjustable r,g,b,w values and strobe rate. I made each finger combo correspond to a certain preset of color and flash-rate. In the videos below, you can see how certain finger combinations change toe behaviour of the light system. 
 
 [Demo 1](https://www.youtube.com/watch?v=RXOOUA0MhtE)
+
 [demo 2](https://www.youtube.com/watch?v=ftwYaqqo1Zw)
+
 [Demo 3, with altered rates](https://www.youtube.com/watch?v=c19MdWHTY7M)
 
 
