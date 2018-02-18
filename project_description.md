@@ -11,6 +11,15 @@ Since I would be working with gestures, I needed an input device that can help m
 
 For my output, I used a NeoPixel LED strip. This allowed me quickly build a working demo. 
 
+Leap-motion:
+![leap-motion](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/leap-motion.JPG)
+
+Neo-pixels
+![neo-pixels](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/neopixel.JPG)
+
+Arduino
+![arduino](https://github.com/artintelclass/interactive-project-andrjjr/blob/master/ardiuno.JPG)
+
 ### Inputs + machine learning models
 
 The Leap Motion works with a pre-made processing library, [nok-leap-motion-processing](https://github.com/nok/leap-motion-processing). The class Wekinator examples are built on top of this library. This outputs 15 data points, the x, y, and z values of each finger-tip. I planned to use this data in three ways:
