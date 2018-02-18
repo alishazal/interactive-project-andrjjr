@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>6449</oscReceivePort>
+  <oscSendPort>6451</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/inputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/wek/inputs</oscMessage>
+    <numInputs>15</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>inputs_1</string>
+      <string>inputs_2</string>
+      <string>inputs_3</string>
+      <string>inputs_4</string>
+      <string>inputs_5</string>
+      <string>inputs_6</string>
+      <string>inputs_7</string>
+      <string>inputs_8</string>
+      <string>inputs_9</string>
+      <string>inputs_10</string>
+      <string>inputs_11</string>
+      <string>inputs_12</string>
+      <string>inputs_13</string>
+      <string>inputs_14</string>
+      <string>inputs_15</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list">
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>inputs_2_Avg30</name>
+        <index>1</index>
+        <windowSize>30</windowSize>
+        <op class="wekiinputhelper.Modifiers.AverageWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+    </outputs>
+    <numOutputTypes>1</numOutputTypes>
+    <dimensionality>1</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnReceive">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+    <runningListener class="wekiinputhelper.InputTriggerer$1">
+      <outer-class class="wekiinputhelper.TriggerOnReceive" reference="../.."/>
+    </runningListener>
+  </inputTriggerer>
+  <isSendingOriginalInputs>false</isSendingOriginalInputs>
+</WekiInputHelperFileData>
